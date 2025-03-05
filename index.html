@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Ayudando a Emprender</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        /* Personalización adicional si es necesaria */
+        .hero {
+            background-image: url('imagenes/hero.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Menú de Navegación -->
+    <nav class="bg-blue-900 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Fundación Ayudando a Emprender</a>
+            <ul class="flex space-x-4">
+                <li><a href="#mision" class="hover:text-gray-300">Misión</a></li>
+                <li><a href="#vision" class="hover:text-gray-300">Visión</a></li>
+                <li><a href="#programas" class="hover:text-gray-300">Programas</a></li>
+                <li><a href="#contacto" class="hover:text-gray-300">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div><img src="imagenes/carousel1.jpg.jpg" alt="" class="mx-auto flex justify-between items-center"></div>
+
+    <!-- Sección Hero con Llamado a la Acción -->
+    <header class="hero h-96 flex items-center justify-center text-white text-center">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+          <h1 class="text-4xl font-bold mb-4">Ayúdanos a Cambiar Vidas</h1>
+            <p class="mb-6">Tu donación puede marcar la diferencia. ¡Únete a nuestra causa!</p>
+            <a href="#donar" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600">Donar Ahora</a>
+        </div>
+    </header>
+
+    <!-- Sección Misión -->
+    <section id="mision" class="container mx-auto my-12 p-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Misión</h2>
+        <p class="text-gray-700 text-center max-w-2xl mx-auto">
+            Nuestra misión es capacitar y orientar educativamente a personas vulnerables, brindándoles las herramientas necesarias para mejorar su calidad de vida y fomentar el emprendimiento.
+        </p>
+    </section>
+
+    <!-- Sección Visión -->
+    <section id="vision" class="bg-white py-12">
+        <div class="container mx-auto p-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Visión</h2>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto">
+                Ser una fundación líder en la transformación social, creando oportunidades sostenibles para comunidades en situación de vulnerabilidad.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección Programas -->
+    <section id="programas" class="container mx-auto my-12 p-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Nuestros Programas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Programa de Educación</h3>
+                <p class="text-gray-700">Ofrecemos cursos y talleres para mejorar las habilidades educativas de nuestros beneficiarios.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Programa de Emprendimiento</h3>
+                <p class="text-gray-700">Apoyamos a emprendedores con capacitación y recursos para iniciar sus negocios.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Programa de Salud</h3>
+                <p class="text-gray-700">Brindamos acceso a servicios de salud y promovemos hábitos saludables.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="bg-gray-200 py-12">
+        <div class="container mx-auto p-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Contacto</h2>
+            <form class="max-w-2xl mx-auto">
+                <div class="mb-4">
+                    <label for="nombre" class="block text-gray-700">Nombre</label>
+                    <input type="text" id="nombre" class="w-full p-2 rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Correo Electrónico</label>
+                    <input type="email" id="email" class="w-full p-2 rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="mensaje" class="block text-gray-700">Mensaje</label>
+                    <textarea id="mensaje" class="w-full p-2 rounded-lg" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded-full hover:bg-blue-800">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Fundación Ayudando a Emprender. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript (opcional) -->
+    <script>
+        // Aquí puedes agregar funcionalidades de JavaScript si es necesario
+        console.log("Sitio web cargado correctamente.");
+    </script>
+</body>
+</html>
