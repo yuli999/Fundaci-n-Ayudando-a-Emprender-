@@ -100,7 +100,7 @@
         </div>
     </section>
 
-  <!-- Sección Contacto con envío a correo -->
+ <!-- Sección Contacto (usando FormSubmit) -->
 <section id="contacto" class="bg-gray-200 py-12">
     <div class="container mx-auto p-4">
         <h2 class="text-3xl font-bold text-center mb-6">Contacto</h2>
@@ -109,7 +109,7 @@
             method="POST"
             class="max-w-2xl mx-auto"
         >
-            <!-- Campos del formulario -->
+            <!-- Campos del formulario (asegúrate de incluir "name") -->
             <div class="mb-4">
                 <label for="nombre" class="block text-gray-700">Nombre</label>
                 <input type="text" id="nombre" name="nombre" class="w-full p-2 rounded-lg" required>
@@ -123,11 +123,12 @@
                 <textarea id="mensaje" name="mensaje" class="w-full p-2 rounded-lg" rows="5" required></textarea>
             </div>
 
-            <!-- Configuración adicional de FormSubmit -->
-            <input type="hidden" name="_next" value="https://tudominio.com/gracias.html"> <!-- Reemplaza con tu URL de éxito -->
-            <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web">
+            <!-- Configuración de FormSubmit -->
+            <input type="hidden" name="_next" value="https://tudominio.com/gracias.html"> <!-- URL de redirección -->
+            <input type="hidden" name="_subject" value="Nuevo mensaje - Fundación Ayudando a Emprender">
+            <input type="hidden" name="_template" value="table"> <!-- Formato del email -->
             <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="_honey" style="display:none"> <!-- Para evitar spam -->
+            <input type="text" name="_honey" style="display:none"> <!-- Anti-spam -->
 
             <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded-full hover:bg-blue-800">
                 Enviar Mensaje
