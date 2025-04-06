@@ -100,16 +100,13 @@
         </div>
     </section>
 
- <!-- Sección Contacto (usando FormSubmit) -->
+<!-- Sección Contacto -->
 <section id="contacto" class="bg-gray-200 py-12">
     <div class="container mx-auto p-4">
         <h2 class="text-3xl font-bold text-center mb-6">Contacto</h2>
-        <form 
-            action="https://formsubmit.co/fundacionayudandoaemprender.org@gmail.com" 
-            method="POST"
-            class="max-w-2xl mx-auto"
-        >
-            <!-- Campos del formulario (asegúrate de incluir "name") -->
+        
+        <!-- Formulario modificado (envía a form.php) -->
+        <form action="form.php" method="POST" class="max-w-2xl mx-auto">
             <div class="mb-4">
                 <label for="nombre" class="block text-gray-700">Nombre</label>
                 <input type="text" id="nombre" name="nombre" class="w-full p-2 rounded-lg" required>
@@ -122,6 +119,13 @@
                 <label for="mensaje" class="block text-gray-700">Mensaje</label>
                 <textarea id="mensaje" name="mensaje" class="w-full p-2 rounded-lg" rows="5" required></textarea>
             </div>
+
+            <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded-full hover:bg-blue-800">
+                Enviar Mensaje
+            </button>
+        </form>
+    </div>
+</section>
 
             <!-- Configuración de FormSubmit -->
             <input type="hidden" name="_next" value="https://tudominio.com/gracias.html"> <!-- URL de redirección -->
