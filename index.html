@@ -45,73 +45,26 @@
         </ul>
     </div>
 </nav>
-
-<!-- Hero Section con Carrusel y Llamado a la Acción - Versión Mobile Optimizada -->
+<!-- Hero Section Unificada - Responsive para todos los dispositivos -->
 <div class="relative">
     <!-- Carrusel de imágenes de fondo -->
-    <div class="overflow-hidden h-[24rem] sm:h-[28rem] md:h-[32rem] lg:h-[36rem]">
+    <div class="overflow-hidden h-64 md:h-[28rem] lg:h-[32rem] xl:h-[36rem]">
         <img src="carousel1.jpg.jpg" alt="Familias vulnerables recibiendo ayuda" class="w-full h-full object-cover">
     </div>
     
-    <!-- Overlay oscuro para mejor contraste -->
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <!-- Overlay oscuro para mejor contraste (solo desktop/tablet) -->
+    <div class="absolute inset-0 bg-black md:bg-opacity-40 bg-opacity-0"></div>
     
     <!-- Contenido del llamado a la acción -->
-    <div class="absolute inset-0 flex items-center justify-center px-4">
-        <div class="text-center w-full max-w-4xl mx-auto">
-            <h1 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 md:mb-6 drop-shadow-lg">
-                <span class="text-red-400 md:text-red-500">Salva Vidas Hoy</span>
-                <span class="block text-base xs:text-lg sm:text-xl md:text-2xl mt-1 sm:mt-2">Apoya a Familias en Situación de Vulnerabilidad</span>
-            </h1>
-            
-            <p class="text-sm xs:text-base sm:text-lg md:text-xl text-white mb-4 sm:mb-6 md:mb-8 drop-shadow-md max-w-2xl mx-auto leading-tight sm:leading-normal">
-                Cada donación provee alimentos, educación y esperanza a quienes más lo necesitan. 
-                <span class="font-semibold block sm:inline mt-1">¡Tu ayuda marca la diferencia real!</span>
-            </p>
-            
-            <div class="flex flex-col space-y-2 xs:space-y-3 sm:space-y-0 sm:flex-row justify-center gap-2 xs:gap-3 sm:gap-4">
-                <a href="#donar" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 xs:px-6 xs:py-3 sm:px-8 sm:py-4 rounded-lg text-sm xs:text-base sm:text-lg transition-all duration-300 transform hover:scale-[1.03] active:scale-95 shadow-md hover:shadow-lg">
-                    Donar Ahora
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 xs:h-4 xs:w-4 sm:h-5 sm:w-5 inline-block ml-1" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-                    </svg>
-                </a>
-                
-                <a href="#programas" class="bg-white hover:bg-gray-100 text-red-600 font-bold px-4 py-2 xs:px-6 xs:py-3 sm:px-8 sm:py-4 rounded-lg text-sm xs:text-base sm:text-lg transition-all duration-300 border-2 border-white shadow-md hover:shadow-lg">
-                    Conoce Nuestros Programas
-                </a>
-            </div>
-            
-            <!-- Mensaje de urgencia -->
-            <p class="mt-4 sm:mt-6 md:mt-8 text-red-100 sm:text-red-200 font-medium flex flex-col xs:flex-row items-center justify-center text-xs xs:text-sm sm:text-base">
-                <span class="flex items-center mb-1 xs:mb-0 xs:mr-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 xs:h-4 xs:w-4 sm:h-5 sm:w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-                    </svg>
-                    +100 familias esperan tu apoyo
-                </span>
-                <span class="hidden xs:inline mx-1">|</span>
-                <span class="xs:ml-1">este mes</span>
-            </p>
-        </div>
-    </div>
-</div>
-    <!-- Hero Section para Móviles -->
-<div class="block md:hidden">
-    <!-- Imagen principal -->
-    <div class="h-64 w-full overflow-hidden">
-        <img src="carousel1.jpg.jpg" alt="Familias vulnerables recibiendo ayuda" class="w-full h-full object-cover">
-    </div>
-    
-    <!-- Llamado a la acción (debajo de la imagen) -->
-    <div class="bg-blue-900 text-white p-6">
+    <!-- Versión Móvil (debajo de la imagen) -->
+    <div class="md:hidden bg-blue-900 text-white p-6">
         <div class="text-center">
             <h1 class="text-2xl font-bold mb-3">
                 <span class="text-red-400">Salva Vidas Hoy</span>
             </h1>
-            <h2 class="text-xl mb-4">Apoya a Familias en Situación de Vulnerabilidad</h2>
+            <h2 class="text-lg mb-3">Apoya a Familias en Situación de Vulnerabilidad</h2>
             
-            <p class="text-sm mb-5 leading-relaxed">
+            <p class="text-sm mb-4 leading-relaxed">
                 Cada donación provee alimentos, educación y esperanza a quienes más lo necesitan. 
                 <span class="font-semibold block mt-1">¡Tu ayuda marca la diferencia real!</span>
             </p>
@@ -138,11 +91,42 @@
             </p>
         </div>
     </div>
-</div>
-
-<!-- Versión para desktop (se mantiene oculta en móviles) -->
-<div class="hidden md:block">
-    <!-- [Aquí iría tu hero section original para desktop] -->
+    
+    <!-- Versión Desktop/Tablet (superpuesto) -->
+    <div class="hidden md:absolute md:flex inset-0 items-center justify-center px-4">
+        <div class="text-center w-full max-w-4xl mx-auto">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">
+                <span class="text-red-400 lg:text-red-500">Salva Vidas Hoy</span>
+                <span class="block text-lg sm:text-xl lg:text-2xl mt-2">Apoya a Familias en Situación de Vulnerabilidad</span>
+            </h1>
+            
+            <p class="text-base sm:text-lg lg:text-xl text-white mb-5 sm:mb-7 lg:mb-8 drop-shadow-md max-w-2xl mx-auto leading-normal">
+                Cada donación provee alimentos, educación y esperanza a quienes más lo necesitan. 
+                <span class="font-semibold inline-block sm:inline mt-1 sm:mt-0">¡Tu ayuda marca la diferencia real!</span>
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+                <a href="#donar" class="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl">
+                    Donar Ahora
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block ml-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                
+                <a href="#programas" class="bg-white hover:bg-gray-100 text-red-600 font-bold px-6 py-3 sm:px-8 sm:py-4 rounded-lg text-base sm:text-lg transition-all duration-300 border-2 border-white shadow-lg hover:shadow-xl">
+                    Conoce Nuestros Programas
+                </a>
+            </div>
+            
+            <!-- Mensaje de urgencia -->
+            <p class="mt-6 sm:mt-8 text-red-100 lg:text-red-200 font-medium flex items-center justify-center text-sm sm:text-base">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                </svg>
+                +100 familias esperan tu apoyo este mes
+            </p>
+        </div>
+    </div>
 </div>
       <!-- Sección Misión -->
     <section id="mision" class="container mx-auto my-12 p-4">
